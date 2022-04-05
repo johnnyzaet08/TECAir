@@ -1,0 +1,137 @@
+<div class=" Hero signupwrapper">
+    <div class="logo" [routerLink]="['/']">
+        <img src="../../../assets/logo3.png">
+    </div>
+    <div class = 'signupcontainer'>   
+        <h1 class='signupform__heading'>Signup</h1>
+        <form class="signupform" #f="ngForm" novalidate (ngSubmit) = "f.form.valid && onSubmit(f.value)">
+            <div *ngIf = "response!=null && timer == true ? true : false" class="error-msg">
+                {{response}}
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">Title</label>
+                        <input class="input--style-4" type="text" name="title" required autocomplete="off" 
+                           ngModel #title = "ngModel">
+                    </div>
+                    <div *ngIf="title.invalid && (title.dirty || title.touched ||f.submitted)">
+                        <small *ngIf="title.errors.required">
+                            Enter a title
+                        </small>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">First name</label>
+                        <input class="input--style-4" type="text" name="first_name" required autocomplete="off" 
+                        ngModel  #name="ngModel">
+                        <div *ngIf="name.invalid && (name.dirty || name.touched ||f.submitted)">
+                            <small *ngIf="name.errors.required">
+                                Name is required.
+                            </small>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">last name</label>
+                        <input class="input--style-4" type="text" name="last_name" required autocomplete="off" 
+                         ngModel  #last_name = "ngModel">
+                        <div *ngIf=" last_name.invalid && (last_name.dirty || last_name.touched ||f.submitted)">
+                            <small *ngIf="last_name.errors.required">
+                                Last Name is required.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">DOB</label>
+                        <input class="input--style-4"  onfocus="(this.type='date')" onblur="(this.type='text')" name="dob" 
+                            type='text' required autocomplete="off" ngModel #dob = "ngModel">
+                            <div *ngIf = "dob.invalid && (dob.dirty || dob.touched ||f.submitted)">
+                                <small *ngIf = "dob.errors.required">
+                                    Date Of Birth is required
+                                </small>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 inputgroup">
+                    <div class="pwdcontainer">
+                        <label class="label">Password</label>
+                        <input class="input--style-4"  [type]="visible ? 'text' : 'password'" name="password" required 
+                            autocomplete="off" ngModel #password = "ngModel" 
+                            minlength="8"  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}">
+                        <fa-icon [icon]  =  "visible ? faEye : faEyeSlash"  (click) = "onClick()" class="loginform__toggleicon"></fa-icon>
+
+                        <div *ngIf="password.invalid && (password.dirty || password.touched ||f.submitted)">
+                            <small *ngIf="password.errors?.required">Password is required</small>
+                            <small *ngIf="password.errors?.minlength">Password must be at least 8 charachters</small>
+                            <small *ngIf="password.errors?.pattern">Alphanumeric with at least 1 special & uppercase character</small>
+                        </div>
+
+                     </div> 
+                </div>
+                <div class="col-12 col-md-5 inputgroup">
+                    <div class="pwdcontainer">
+                        <label class="label">Confirm Password</label>
+                        <input class="input--style-4"  [type]="visible ? 'text' : 'password'" name="cnfpwd" 
+                            required autocomplete="off" ngModel #cnfpwd = "ngModel" checkpwdvalidator = "password">
+                        <fa-icon [icon]  =  "visible ? faEye : faEyeSlash "  (click) = "onClick()" class="loginform__toggleicon"></fa-icon>
+                     </div>
+
+                     <div *ngIf="cnfpwd.invalid && (cnfpwd.dirty || cnfpwd.touched ||f.submitted)">
+                        <small *ngIf="cnfpwd.errors?.required">Password is required</small>
+                        <small *ngIf="cnfpwd.errors?.notEqual">Passswords do not match</small>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">Email</label>
+                        <input class="input--style-4" type="email" name="email_id" required autocomplete="off" 
+                         ngModel #email_id = "ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  >
+                            <div *ngIf="email_id.invalid && (email_id.dirty || email_id.touched ||f.submitted)">
+                                <small><mat-error *ngIf="email_id.errors?.required">Email is a required field</mat-error></small>
+                                <small *ngIf="email_id.errors?.pattern">This is not a valid Email</small>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 inputgroup">
+                    <div>
+                        <label class="label">Phone Number</label>
+                        <input class="input--style-4" type="tel" name="mobile" required autocomplete="off" ngModel
+                            #mobile = "ngModel" minlength="10" maxlength="10" pattern="^[0-9]*$">
+                        <div *ngIf=" mobile.invalid && (mobile.dirty || mobile.touched||f.submitted)">
+                            <div><small *ngIf = "mobile.errors.pattern">Enter a valid Phone number</small></div>
+                            <small *ngIf="mobile.errors?.required">Phone Number is a required field</small>
+                            <small *ngIf="mobile.errors?.minlength">Phone number must be of 10 digits</small>
+                        </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-11 inputgroup bt">
+                    <button type="submit" class="submitbtn" > Submit </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-11 inputgroup bt">
+                    <a class="login" [routerLink]="['/login']">Already have an account? Login <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+
+    </form>
+
+    </div>
+</div>

@@ -1,0 +1,19 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+}
+html, body { height: 100%; }

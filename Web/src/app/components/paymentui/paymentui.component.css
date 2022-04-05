@@ -1,0 +1,273 @@
+/************************Subheader***************************/
+header 
+{
+    display: flex;
+    align-items: center;
+    height: 6.5rem;
+    background-color:#003366;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+.logo > a
+{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25rem;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    margin-bottom: 0.8rem;
+    
+}
+.msg{
+  
+  margin-top: 1rem;
+  font-weight: 500;
+
+}
+.paymentwrapper
+{
+    background-color:  #fdfdfd;
+    min-height: 100vh;
+    padding: 2rem;
+
+}
+.paymentwrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+body a {
+    color: #28333b;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(64,179,255,0.5);
+    opacity: 0.75;
+    transition: all 0.5s ease;
+  }
+  body a:hover {
+    border-bottom: 2px solid #40b3ff;
+    opacity: 1;
+  }
+  .text 
+  {
+    margin-top: 1rem;
+  }
+  .field {
+    margin-bottom: 25px;
+  }
+  .field.full {
+    width: 100%;
+  }
+  .field.half {
+    width: calc(50% - 12px);
+  }
+  .field.txt{
+    width:45%;
+  }
+  
+  .field label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .field input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #e8ebed;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .field input:placeholder {
+    color: #e8ebed !important;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+  }
+  .flex.justify-space-between {
+    justify-content: space-between;
+    
+  }
+  .card {
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    font-family: 'Poppins';
+  }
+  .card .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .card .card-title {
+    margin-bottom: 50px;
+  }
+  .card .card-title h2 {
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .card .card-body .payment-type,
+  .card .card-body .payment-info {
+    margin-bottom: 2.5rem;
+    
+  }
+  .card .card-body .payment-type h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .card .card-body .payment-type .types {
+    margin: 3.5rem 0;
+  }
+  .card .card-body .payment-type .types .type {
+    width: 30%;
+    position: relative;
+    background: #f2f4f7;
+    border: 2px solid #e8ebed;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .card .card-body .payment-type .types .type:hover {
+    border-color: #28333b;
+  }
+  .card .card-body .payment-type .types .type:hover .logo,
+  .card .card-body .payment-type .types .type:hover p {
+    color: #28333b;
+    font-family: 'Poppins';
+
+  }
+  .card .card-body .payment-type .types .type.selected {
+    border-color: #40b3ff;
+    background: rgba(64,179,255,0.1);
+  }
+  .card .card-body .payment-type .types .type.selected .logo {
+    color: #40b3ff;
+  }
+  .card .card-body .payment-type .types .type.selected p {
+    color: #28333b;
+    font-family: 'Poppins';
+
+  }
+  .card .card-body .payment-type .types .type.selected::after {
+    content: "\f00c";
+    font-family:FontAwesome;
+    font-weight: 900;
+    position: absolute;
+    color:rgb(27, 122, 27);
+    height: 40px;
+    width: 40px;
+    top: -21px;
+    right: -21px;
+    background: #fff;
+    border: 2px solid #40b3ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .card-body .payment-type .types .type .logo,
+  .card .card-body .payment-type .types .type p {
+    transition: all 0.5s ease;
+  }
+  .card .card-body .payment-type .types .type .logo {
+    font-size: 3rem;
+    color: #8a959c;
+  
+
+  }
+  .card .card-body .payment-type .types .type p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #8a959c;
+    font-size: 1.3rem;
+  }
+  .card .card-body .payment-info .column {
+    width: 100%
+  }
+  .card .card-body .payment-info .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .title h4 
+  {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .card .card-body .payment-info .title .num {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid #40b3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 12px;
+    font-size: 12px;
+  }
+  footer {
+    margin: 50px auto;
+    max-width: 850px;
+    text-align: center;
+  }
+  .button {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  .button.button-link {
+    padding: 0 0 2px;
+    margin: 0 25px;
+    border-bottom: 2px solid rgba(64,179,255,0.5);
+    border-radius: 0;
+    opacity: 0.75;
+  }
+  .button.button-link:hover {
+    border-bottom: 2px solid #40b3ff;
+    opacity: 1;
+  }
+  .button.button-primary {
+    background: #40b3ff;
+    color: #fff;
+  }
+  .button.button-primary:hover {
+    background: #218fd9;
+  }
+  .button.button-secondary {
+    background: transparent;
+    border-color: #e8ebed;
+    color: #8a959c;
+  }
+  .button.button-secondary:hover {
+    border-color: #28333b;
+    color: #28333b;
+  }
+  
