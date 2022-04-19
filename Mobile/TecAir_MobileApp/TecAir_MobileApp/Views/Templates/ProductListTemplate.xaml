@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid
+    x:Class="TecAir_MobileApp.Views.Templates.ProductListTemplate"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:converter="clr-namespace:TecAir_MobileApp.Converters"
+    xmlns:helper="clr-namespace:TecAir_MobileApp.Helpers"
+    xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
+    x:Name="productListTemplate">
+
+    <Grid.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToStringConverter x:Key="boolToStringConverter" />
+            <converter:BooleanToColorConverter x:Key="boolToColorConverter" />
+        </ResourceDictionary>
+    </Grid.Resources>
+
+    <Grid
+        Margin="0"
+        ColumnSpacing="0"
+        HorizontalOptions="FillAndExpand"
+        RowDefinitions="Auto, Auto, Auto, Auto"
+        RowSpacing="0"
+        VerticalOptions="FillAndExpand">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{OnIdiom Default=Auto, Desktop=0.2*}" />
+            <ColumnDefinition Width="{OnIdiom Default=*, Desktop=*}" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <!--  Product Image  -->
+        <Image
+            Grid.RowSpan="4"
+            Margin="16,0"
+            Aspect="Fill"
+            BackgroundColor="{DynamicResource Gray-F0}"
+            HeightRequest="{OnIdiom Default=150,
+                                    Desktop=120}"
+            WidthRequest="{OnIdiom Default=140,
+                                   Desktop=200}">
+            <Image.Source>
+                <UriImageSource
+                    CacheValidity="14"
+                    CachingEnabled="true"
+                    Uri="{Binding PreviewImage}" />
+            </Image.Source>
+        </Image>
+
+        <!--  Product Name  -->
+        <Label
+            Grid.Column="1"
+            Margin="0,0,0,8"
+            FontSize="14"
+            HorizontalOptions="Start"
+            LineBreakMode="TailTruncation"
+            MaxLines="1"
+            Style="{StaticResource TitleLabelStyle}"
+            Text="{Binding Name}"
+            VerticalOptions="Center" />
+
+        <!--  Favourite Icon  -->
+        <buttons:SfButton
+            Grid.Column="2"
+            Margin="0,0,0,8"
+            Padding="0"
+            helper:RTLHelper.Margin="{OnIdiom Phone='0,0,8,0',
+                                              Tablet='0,0,4,0',
+                                              Desktop='0,0,8,0'}"
+            Command="{Binding ParentBindingContext.AddFavouriteCommand, Source={x:Reference productListTemplate}}"
+            CommandParameter="{Binding}"
+            HeightRequest="-1"
+            Style="{StaticResource IconButtonStyle}"
+            Text="{Binding IsFavourite, Converter={StaticResource boolToStringConverter}, ConverterParameter=1}"
+            TextColor="{Binding IsFavourite, Converter={x:StaticResource boolToColorConverter}, ConverterParameter=4}"
+            WidthRequest="-1" />
+
+        <!--  Product Description  -->
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="0,0,0,8"
+            LineBreakMode="TailTruncation"
+            LineHeight="{OnPlatform Android=1.25,
+                                    Default=-1}"
+            MaxLines="2"
+            Style="{StaticResource SimpleLabelStyle}"
+            Text="{Binding Summary}" />
+
+        <StackLayout
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="0,0,0,16"
+            Orientation="Horizontal"
+            Spacing="2">
+
+            <!--  Product Price  -->
+            <Label
+                FontFamily="Montserrat-SemiBold"
+                FontSize="20"
+                LineHeight="{OnPlatform Android=1.25,
+                                        Default=-1}"
+                Style="{StaticResource SimpleLabelStyle}"
+                Text="{Binding DiscountPrice, StringFormat='${0:0 }'}"
+                TextColor="{DynamicResource PrimaryColor}" />
+
+            <Label
+                Margin="0,6,0,6"
+                Style="{StaticResource SimpleLabelStyle}"
+                Text="{Binding ActualPrice, StringFormat='${0:0.00}'}"
+                TextDecorations="Strikethrough" />
+
+        </StackLayout>
+
+        <!--  Product Rating  -->
+        <rating:SfRating
+            Grid.Row="3"
+            Grid.Column="1"
+            ItemSize="13"
+            ItemSpacing="1"
+            RatingSettings="{StaticResource CommonRatingSettings}"
+            Style="{StaticResource RatingStyle}"
+            Value="{Binding OverallRating}" />
+    </Grid>
+</Grid>
