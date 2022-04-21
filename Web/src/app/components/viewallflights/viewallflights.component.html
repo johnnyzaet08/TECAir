@@ -6,7 +6,7 @@
         <table class="tbl">
             <thead>
                 <tr>
-                    <th class="head" colspan="3">
+                    <th class="head" colspan="2">
                         <span>
                             <img src="../../assets/adminheader.png" class="head_logo " >
                         </span>
@@ -15,9 +15,19 @@
                         <h1 class="h1">
                         FLIGHTS
                     </h1>
-                </th></tr>
+                    </th>
+                    <th class="head" colspan="5">
+                        <span>
+                            <img src="../../assets/clock.png" class="head_logo" >
+                        </span>
+                    </th>
+                    <th class="h">
+                        <div class="label" id="datatime_label">
+                        </div>
+                    </th>
+                </tr>
                 <tr>
-                    <th colspan="7">
+                    <th colspan="6">
                        <div class="searchplace">                          
                             <input type="text" class="search" name="search" [(ngModel)]="searchText" placeholder="&#xf002; Search for Flights">
                         </div> 
@@ -31,7 +41,8 @@
                     <th class="th">Arrival Time</th>
                     <th class="th">Duration</th> 
                     <th class="th"></th>                         
-                
+                    <th class="th"></th>
+                    <th class="th"></th>
                 </tr>
             </thead>
             <tbody>
@@ -48,10 +59,16 @@
                     <td class="td">{{flight.arrival_location}}</td>
                     <td class="td">{{flight.arrival_time}}</td>
                     <td class="td">{{flight.duration}}</td>
+                    <td></td>
                     <td class="td">
                         <button class="bt update" [routerLink]="['/updateflight/', flight.flight_number]">Update</button><br>
                         <button class="bt delete" [routerLink]="['/deleteflight/', flight.flight_number]">Delete</button>
                     </td>
+                    <td class="td">
+                        <button class="bt update" [routerLink]="['/updateflight/', flight.flight_number]">Close</button><br>
+                        <button class="bt update" [routerLink]="['/deleteflight/', flight.flight_number]">Open </button>
+                    </td>
+                    <td></td>
                 
                 </tr>
             </tbody>

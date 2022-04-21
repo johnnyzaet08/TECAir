@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { TmplAstBoundAttribute } from '@angular/compiler';
+import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Adminflight } from 'src/app/models/adminflight';
 import { AdminflightcrudService } from 'src/app/services/adminflightcrud.service';
@@ -19,10 +20,17 @@ export class ViewallflightsComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
+    var today = new Date();
+    var time = today.getDate() + "-" + (today.getMonth() + 1) + "-" + today.getFullYear() + "  " + today.getHours() + ":" + today.getMinutes();
+    document.getElementById("datatime_label").innerHTML = time;
+
+    console.log(this.service.getAll());
+    console.log("data es tal:");
     this.service.getAll().subscribe((data: Adminflight[])=>{
         this.flights = data;
-        this.flights=this.flights.sort();
+        console.log(this.flights);
+        //this.flights=this.flights.sort();
     })  
     if (!this.service.refreshcheck) {
       window.location.reload();
