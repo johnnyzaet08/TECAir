@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TecAir_MobileApp.Views.SearchView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+    xmlns:behaviour="clr-namespace:TecAir_MobileApp.Behaviors"
+    xmlns:behaviours="clr-namespace:TecAir_MobileApp.Behaviors"
+    xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:controls="clr-namespace:TecAir_MobileApp.Controls"
+    xmlns:converter="clr-namespace:TecAir_MobileApp.Converters"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    xmlns:local="clr-namespace:TecAir_MobileApp.Views"
+    xmlns:viewModel="clr-namespace:TecAir_MobileApp.ViewModels"
+    Title="Business Registration Form"
+    BackgroundColor="{DynamicResource Gray-100}"
+    NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <viewModel:SearchViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToColorConverter x:Key="ColorConverter" />
+            <converter:InverseBoolConverter x:Key="InverseBoolConverter" />
+            <converter:NameValidationConverter x:Key="FirstValidationErrorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout BackgroundColor="{DynamicResource Gray-Bg}" Spacing="0">
+
+                <!--  Title  -->
+                <Label
+                    Margin="0,16"
+                    FontFamily="Montserrat-Medium"
+                    Style="{StaticResource TitleLabelStyle}"
+                    Text="Search your travel" />
+
+                <BoxView BackgroundColor="{DynamicResource Gray-200}" HeightRequest="1" />
+                <ContentPresenter />
+
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="16,24"
+                BackgroundColor="{DynamicResource Gray-100}"
+                Spacing="0">
+               
+
+                <!--  Type of business  -->
+                <Label
+                    Margin="0,24,0,4"
+                    FontFamily="Montserrat-Medium"
+                    FontSize="12"
+                    HeightRequest="18"
+                    Text="Your Location"
+                    TextColor="{DynamicResource Gray-800}" />
+
+                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
+                    <combobox:SfComboBox
+                        x:Name="FromPicker"
+                        SelectedValue="{Binding Business, Mode=TwoWay}"
+                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                        VerticalOptions="CenterAndExpand"
+                        Watermark="Choose your point of departure">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                                <x:String>Juan Santamaria Airport (Costa Rica)
+                                    </x:String>
+                                    <x:String>Daniel Oduber Airport (Costa Rica)</x:String>
+                                    <x:String>Tocumen Airport (Panama)</x:String>
+                                    <x:String>Toluca Airport (Mexico)</x:String>
+                                    <x:String>La Aurora Airport (Guatemala)</x:String>
+                                    <x:String>Cuscatlán Airport (Salvador)</x:String>
+                                    <x:String>Denver Airport (USA)</x:String>
+                                    <x:String>Dallas Airport (USA)</x:String>
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+                
+                <Label
+                    Margin="0,24,0,4"
+                    FontFamily="Montserrat-Medium"
+                    FontSize="12"
+                    HeightRequest="18"
+                    Text="Your Destiny"
+                    TextColor="{DynamicResource Gray-800}" />
+                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
+                    <combobox:SfComboBox
+                        x:Name="ToPicker"
+                        SelectedValue="{Binding Business, Mode=TwoWay}"
+                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                        VerticalOptions="CenterAndExpand"
+                        Watermark="Choose your point of arrival">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                                <x:String>Juan Santamaria Airport (Costa Rica)</x:String>
+                                <x:String>Daniel Oduber Airport (Costa Rica)</x:String>
+                                <x:String>Tocumen Airport (Panama)</x:String>
+                                <x:String>Toluca Airport (Mexico)</x:String>
+                                <x:String>La Aurora Airport (Guatemala)</x:String>
+                                <x:String>Cuscatlán Airport (Salvador)</x:String>
+                                <x:String>Denver Airport (USA)</x:String>
+                                <x:String>Dallas Airport (USA)</x:String>
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+                <Label
+                    Margin="0,24,0,4"
+                    FontFamily="Montserrat-Medium"
+                    FontSize="12"
+                    HeightRequest="18"
+                    Text="People"
+                    TextColor="{DynamicResource Gray-800}" />
+                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
+                    <combobox:SfComboBox
+                        x:Name="AdultsPicker"
+                        SelectedValue="{Binding Business, Mode=TwoWay}"
+                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                        VerticalOptions="Center"
+                        Watermark="Adults(12+)">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5</x:String>
+                                <x:String>6</x:String>
+                                <x:String>7</x:String>
+                                <x:String>8</x:String>
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
+                    <combobox:SfComboBox
+                        x:Name="ChildrenPicker"
+                        SelectedValue="{Binding Business, Mode=TwoWay}"
+                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                        VerticalOptions="Center"
+                        Watermark="Children(2-11)">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5</x:String>
+                                <x:String>6</x:String>
+                                <x:String>7</x:String>
+                                <x:String>8</x:String>
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
+                    <combobox:SfComboBox
+                        x:Name="InfantsPicker"
+                        SelectedValue="{Binding Business, Mode=TwoWay}"
+                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
+                        VerticalOptions="Center"
+                        Watermark="Infants(0-1)">
+                        <combobox:SfComboBox.ComboBoxSource>
+                            <ListCollection:List x:TypeArguments="x:String">
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5</x:String>
+                                <x:String>6</x:String>
+                                <x:String>7</x:String>
+                                <x:String>8</x:String>
+                            </ListCollection:List>
+                        </combobox:SfComboBox.ComboBoxSource>
+                    </combobox:SfComboBox>
+                </inputLayout:SfTextInputLayout>
+               
+                <!--  Submit Button  -->
+                <buttons:SfButton
+                    Margin="0,24,0,0"
+                    Command="{Binding SubmitCommand}"
+                    Style="{StaticResource GradientButtonStyle}"
+                    Text="SUBMIT"
+                    WidthRequest="200" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
