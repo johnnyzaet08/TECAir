@@ -6,9 +6,11 @@
   </div>
   <div class="nav-items">
     <ul>
+      <li><a [routerLink]="['/CreateDeal']">Create Deal</a></li>
+      <li><a [routerLink]="['/Deals']">Deals</a></li>
+      <li><a [routerLink]="['/Addbag']">Assign Bag</a></li>          
       <li><a [routerLink]="['/AddFlight']">Create Flight</a></li>
       <li><a [routerLink]="['/ViewAllFlights']">Display Flights</a></li>
-      <li><a [routerLink]="['/Addbag']">Asign Bag</a></li>
       <li><a (click)="handlelogout()">Logout</a></li>
     </ul>
   </div>

@@ -20,6 +20,10 @@ import { FlightdataComponent } from './components/dashboard/flightdata/flightdat
 import { CancellationsComponent } from './components/dashboard/cancellations/cancellations.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { EticketComponent } from './components/eticket/eticket.component';
+import { DealsComponent } from './components/deals/deals.component';
+import { Deals2Component } from './components/deals2/deals2.component';
+import { DealsUpdateComponent } from './components/dealsUpdate/dealsUpdate.component';
+import { DealsShowComponent } from './components/dealsShow/dealsShow.component';
 
 const routes: Routes = [
   { path: '', component: SearchComponent },
@@ -44,6 +48,10 @@ const routes: Routes = [
   { path: 'Addbag', component: AddbagComponent },
 
   { path: 'ViewAllFlights', component: ViewallflightsComponent },
+  {path:'Deals', component: DealsComponent},
+  {path:'CreateDeal', component: Deals2Component},
+  {path:'dealsUpdate', component: DealsUpdateComponent},
+  {path:'dealsShow', component: DealsShowComponent},
   { path: 'updateflight/:flightnumber', component: UpdateflightComponent },
   { path: 'deleteflight/:flightnumber', component: DeleteflightComponent },
 

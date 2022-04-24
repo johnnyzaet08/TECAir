@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.bg
+{
+    background-image:url(../../../assets/adminbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem;
+    
+   
+}
+.view
+{
+    min-height:575px;
+    
+}
+.head
+{   padding:25px;
+    text-align: right;
+}
+.h{
+    text-align: left;
+
+}
+
+.head_logo
+{
+    padding-top: 10px;
+    height: 7rem;
+    cursor: pointer;
+}
+.tbl
+    {
+        border-spacing: 0.5rem;
+        margin:auto;
+        border-radius: 15px;
+        padding:20px;
+        width:75%;
+        padding-left: 40px;
+        background-color: white;   
+        border-collapse: collapse;
+    }
+.h1
+{
+    text-align: left;
+    background-color: white;
+    font-size:30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: 'Rubik' , sans-serif;
+    font-weight: 600;
+        
+}
+    .th
+    {
+        color:white;
+        background-color: rgb(102, 96, 96); 
+        padding:20px;  
+        
+    }
+
+    .tr:nth-child(even) 
+    {
+        background-color: rgb(209, 179, 179);
+    }
+
+   
+    .td
+    {
+        font-family: 'Rubik';
+        text-align: center;
+        font-size:16px;
+        font-weight: 600;
+        padding:15px;   
+        
+    }
+    .th{
+        font-family: 'Rubik';
+        text-align: center;
+        font-size:16px;
+        font-weight: 600;
+        padding:15px;   
+    }
+
+    .bt
+    {
+        width:110px;
+        color:white;
+        font-size: large;
+        border: none;
+        border-radius: 3px;
+        padding: 15px 28px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        cursor:pointer;  
+    }
+
+    .update
+    {
+        margin-bottom: 5px;
+        background-color: #5a8ad3;
+        
+    }
+
+    .delete
+    {
+        background-color: rgb(214, 90, 90);
+    }
+    
+    .searchplace
+    {
+         padding-bottom: 30px;
+         
+    }
+    .search
+    { 
+       
+        font-family: 'Rubik', sans-serif;
+        padding:15px;
+        border:none;
+        background-color: rgb(216, 215, 215);
+        height:50px;
+        width:400px;
+        font-size:16px;
+        border-radius: 5px;
+        outline: none;
+        font-family: FontAwesome;
+    }
+    
+
+@media screen and (max-width:768px)
+{
+    .bg
+    {
+        padding:1rem;
+    
+    }
+    .view
+    {
+        zoom:60%;
+        height:100%;
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .bg
+    {
+        padding:1rem;
+    
+    }
+    .view
+    {
+    
+        height:1000px;
+      
+    }
+}
+@media screen and (max-width:540px)
+{
+    .bg
+    {
+        padding:0.8rem;
+    
+    }
+    .view
+    {
+        zoom:40%;
+        height:1000px;
+      
+    }
+}
+@media screen and (max-width:362px)
+{
+    .bg
+    {
+        padding:0.8rem;
+    
+    }
+    .view
+    {
+        
+        height:1000px;
+       
+    }
+}
+
