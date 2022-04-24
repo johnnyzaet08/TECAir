@@ -1,4 +1,7 @@
 FormsViewGroup.dll
+SkiaSharp.dll
+SkiaSharp.Views.Android.dll
+SkiaSharp.Views.Forms.dll
 Syncfusion.Buttons.XForms.Android.dll
 Syncfusion.Cards.XForms.Android.dll
 Syncfusion.Core.XForms.Android.dll
@@ -114,3 +117,4 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+TecAir_MobileApp.dll

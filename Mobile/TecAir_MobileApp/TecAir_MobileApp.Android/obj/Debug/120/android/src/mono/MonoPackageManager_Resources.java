@@ -4,6 +4,11 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "TecAir_MobileApp.Android.dll" comes first in this list. */
 		"TecAir_MobileApp.Android.dll",
 		"FormsViewGroup.dll",
+		"SkiaSharp.dll",
+		"SkiaSharp.Extended.dll",
+		"SkiaSharp.Extended.Svg.dll",
+		"SkiaSharp.Views.Android.dll",
+		"SkiaSharp.Views.Forms.dll",
 		"Syncfusion.Buttons.XForms.Android.dll",
 		"Syncfusion.Buttons.XForms.dll",
 		"Syncfusion.Cards.XForms.Android.dll",

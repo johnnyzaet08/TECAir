@@ -1,4 +1,5 @@
-﻿using TecAir_MobileApp.Validators;
+﻿using System;
+using TecAir_MobileApp.Validators;
 using TecAir_MobileApp.Validators.Rules;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -19,9 +20,14 @@ namespace TecAir_MobileApp.ViewModels
         public SearchViewModel()
         {
             this.InitializeProperties();
-            
+            this.PromotionsCommand = new Command(this.PromotionsClicked);
             this.SubmitCommand = new Command(this.SubmitClicked);
+            this.ConfigCommand = new Command(this.ConfigClicked);
+
+
         }
+
+       
 
         #endregion
 
@@ -56,8 +62,9 @@ namespace TecAir_MobileApp.ViewModels
         /// Gets or sets the property that bounds with an entry that gets the City from user.
         /// </summary>
         public string City { get; set; }
+        public Command PromotionsCommand { get; }
 
-        #endregion 
+        #endregion
 
         #region Comments
 
@@ -65,7 +72,7 @@ namespace TecAir_MobileApp.ViewModels
         /// Gets or sets the command is executed when the Submit button is clicked.
         /// </summary>
         public Command SubmitCommand { get; set; }
-
+        public Command ConfigCommand { get; set; }
         #endregion
 
         #region Methods
@@ -87,6 +94,16 @@ namespace TecAir_MobileApp.ViewModels
         {
             
                 await NavigationService.NavigateToAsync<Page2ViewModel>();
+            
+        }
+        private async void PromotionsClicked(object obj)
+        {
+
+            await NavigationService.NavigateToAsync<PageFlightViewModel>();
+
+        }
+        private async void ConfigClicked(object obj)
+        {
             
         }
 

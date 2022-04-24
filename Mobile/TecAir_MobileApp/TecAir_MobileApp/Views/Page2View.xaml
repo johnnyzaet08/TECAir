@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TecAir_MobileApp.Views.Page2View">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" 
+             xmlns:viewModel="clr-namespace:TecAir_MobileApp.ViewModels"
+             x:Class="TecAir_MobileApp.Views.Page2View"
+             >
+    <ContentPage.BindingContext>
+        <viewModel:Page2ViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label
+                    Margin="0,600,0,4"
+                    FontFamily="Montserrat-Medium"
+                    FontSize="16"
+                    HeightRequest="20"
+                    Text="Add Card to pay"
+                    TextColor="{DynamicResource Gray-800}" />
+            
+            <buttons:SfButton
+                    Margin="0,10,0,0"
+                    Command="{Binding SubmitCommand}"
+                    Style="{StaticResource GradientButtonStyle}"
+                    Text="Go to pay"
+                    WidthRequest="200" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -54,8 +54,23 @@
                 Padding="16,24"
                 BackgroundColor="{DynamicResource Gray-100}"
                 Spacing="0">
-               
 
+                <buttons:SfButton
+                            Margin="250,0,0,4"
+                            FontSize="12"
+                            Command="{Binding ConfigCommand}"
+                            Style="{StaticResource TransparentButtonStyle}"
+                            Text="Configurations"
+                            TextColor="{DynamicResource Gray-800}" />
+                <!--  Type of business  -->
+                <!--  Sign-up button  -->
+                <buttons:SfButton
+                            Margin="125,0,0,4"
+                            FontSize="16"
+                            Command="{Binding PromotionsCommand}"
+                            Style="{StaticResource TransparentButtonStyle}"
+                            Text="Promotions"
+                            TextColor="{DynamicResource PrimaryColor}" />
                 <!--  Type of business  -->
                 <Label
                     Margin="0,24,0,4"
@@ -149,7 +164,7 @@
                     <Label Text="Round Trip"
                    VerticalOptions="Center" />
                     <Switch x:Name="includeSwitch"
-                            d:Toggled="includeSwitch_Toggled"/>
+                            Toggled="includeSwitch_Toggled"/>
                 
                 </StackLayout>
                 <StackLayout>
@@ -166,7 +181,7 @@
                                           Path=Date}"
                     Format="D"
                     Margin="0,24,0,4"
-                    d:DateSelected="endDatePicker_DateSelected"/>
+                    DateSelected="endDatePicker_DateSelected"/>
                     
                     <Label x:Name="resultLabel"
                         FontAttributes="Bold"

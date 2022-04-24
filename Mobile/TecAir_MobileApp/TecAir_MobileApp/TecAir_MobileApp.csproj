@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Data\catalog.json" />
-    <None Remove="Data\ecommerce.json" />
+    <None Remove="Data\transaction.json" />
+    <None Remove="Images\PaymentSuccess.svg" />
     <None Remove="Resources\Fonts\Montserrat-Bold.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Medium.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Data\catalog.json" />
-    <EmbeddedResource Include="Data\ecommerce.json" />
+    <EmbeddedResource Include="Data\transaction.json" />
+    <EmbeddedResource Include="Images\PaymentSuccess.svg" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Bold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Medium.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
@@ -31,6 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.Cards" Version="20.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="20.1.0.48" />
@@ -57,8 +60,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\PageSView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    <EmbeddedResource Update="Views\AddCardPageView.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\ContactEmailEntry.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -129,6 +132,12 @@
     <EmbeddedResource Update="Views\Page1View.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\PageFlightView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PaymentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\SearchView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -139,9 +148,6 @@
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Templates\ProductListTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\TravelsAvailableView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

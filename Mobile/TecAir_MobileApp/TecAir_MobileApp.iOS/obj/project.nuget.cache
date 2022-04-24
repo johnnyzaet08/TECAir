@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "NkEZ5rK9YolCZDKctX9oWfCcMiVeUm3Eyql3PNs3IuGo69V5eP0DYJw2TUcCXLd6keatOm7B0AlOcTrUTtKrgQ==",
+  "dgSpecHash": "df7d8II+cjrZFXQx6QapvsZZaqej3BublPnCiL1KidwCCH7LA3MVCSGDl1Sck42aSmk2cA0X4hm3Cu68EffF7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabos\\Desktop\\ProyectoData\\TecAir_MobileApp\\TecAir_MobileApp.iOS\\TecAir_MobileApp.iOS.csproj",
+  "projectFilePath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.iOS\\TecAir_MobileApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gabos\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
+    "C:\\Users\\gabos\\.nuget\\packages\\skiasharp.extended\\1.60.0\\skiasharp.extended.1.60.0.nupkg.sha512",
+    "C:\\Users\\gabos\\.nuget\\packages\\skiasharp.svg\\1.60.0\\skiasharp.svg.1.60.0.nupkg.sha512",
+    "C:\\Users\\gabos\\.nuget\\packages\\skiasharp.views\\1.68.0\\skiasharp.views.1.68.0.nupkg.sha512",
+    "C:\\Users\\gabos\\.nuget\\packages\\skiasharp.views.forms\\1.68.0\\skiasharp.views.forms.1.68.0.nupkg.sha512",
     "C:\\Users\\gabos\\.nuget\\packages\\syncfusion.licensing\\20.1.0.48\\syncfusion.licensing.20.1.0.48.nupkg.sha512",
     "C:\\Users\\gabos\\.nuget\\packages\\syncfusion.xamarin.buttons\\20.1.0.48\\syncfusion.xamarin.buttons.20.1.0.48.nupkg.sha512",
     "C:\\Users\\gabos\\.nuget\\packages\\syncfusion.xamarin.cards\\20.1.0.48\\syncfusion.xamarin.cards.20.1.0.48.nupkg.sha512",
