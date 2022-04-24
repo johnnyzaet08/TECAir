@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -11,16 +11,17 @@ import { SignupComponent } from '../app/components/signup/signup.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
-import {MatChipsModule} from '@angular/material/chips';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { AddflightComponent } from './components/addflight/addflight.component'
+import { AddflightComponent } from './components/addflight/addflight.component';
+import { AddbagComponent } from './components/addbag/addbag.component';
 import { DeleteflightComponent } from './components/deleteflight/deleteflight.component';
 import { UpdateflightComponent } from './components/updateflight/updateflight.component';
 import { ViewallflightsComponent } from './components/viewallflights/viewallflights.component';
@@ -28,8 +29,7 @@ import { AdminloginComponent } from './components/adminlogin/adminlogin.componen
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
-
-import {Confirmvalidator} from '../app/shared/confirmvalidator.directive';
+import { Confirmvalidator } from '../app/shared/confirmvalidator.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DisplayflightComponent } from './components/displayflight/displayflight.component';
@@ -43,11 +43,16 @@ import { FlightdataComponent } from './components/dashboard/flightdata/flightdat
 import { SidebarComponent } from './components/dashboard/sidebar/sidebar.component';
 import { LoggedinheaderComponent } from './components/loggedinheader/loggedinheader.component';
 import { CancellationsComponent } from './components/dashboard/cancellations/cancellations.component';
-import { RulesComponent } from './components/rules/rules.component'
+import { RulesComponent } from './components/rules/rules.component';
 import { AdminheaderComponent } from './components/adminheader/adminheader.component';
 import { AdminfooterComponent } from './components/adminfooter/adminfooter.component';
 import { AdminloggedinheaderComponent } from './components/adminloggedinheader/adminloggedinheader.component';
 import { EticketComponent } from './components/eticket/eticket.component';
+import { DealsComponent } from './components/deals/deals.component';
+import { DealsCreateComponent } from './components/dealsCreate/dealsCreate.component';
+import { DealsUpdateComponent } from './components/dealsUpdate/dealsUpdate.component';
+import { DealsShowComponent } from './components/dealsShow/dealsShow.component';
+import { DealsDeleteComponent } from './components/dealsDelete/dealsDelete.component';
 
 @NgModule({
   declarations: [
@@ -61,20 +66,26 @@ import { EticketComponent } from './components/eticket/eticket.component';
     FooterComponent,
     DisplayflightComponent,
     AddflightComponent,
+    AddbagComponent,
     DeleteflightComponent,
     UpdateflightComponent,
     ViewallflightsComponent,
+    DealsComponent,
+    DealsCreateComponent,
+    DealsUpdateComponent,
+    DealsDeleteComponent,
     PassengersComponent,
     AdminloginComponent,
 
     PageNotFoundComponent,
-  
+
     SeatuiComponent,
     PaymentuiComponent,
     ForgotpasswordComponent,
     ResetpasswordComponent,
     FlightdataComponent,
     SidebarComponent,
+    DealsShowComponent,
     LoggedinheaderComponent,
     CancellationsComponent,
     RulesComponent,
@@ -82,7 +93,6 @@ import { EticketComponent } from './components/eticket/eticket.component';
     AdminfooterComponent,
     AdminloggedinheaderComponent,
     EticketComponent,
-   
   ],
   imports: [
     BrowserModule,
@@ -91,17 +101,16 @@ import { EticketComponent } from './components/eticket/eticket.component';
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatSelectModule,  
+    MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
     MatChipsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
-    
+    Ng2SearchPipeModule,
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

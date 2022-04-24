@@ -1,0 +1,99 @@
+<app-adminheader *ngIf="!isLoggedIn"></app-adminheader>
+ <app-adminloggedinheader *ngIf="isLoggedIn == true"></app-adminloggedinheader>
+<div class="bg">
+    <div class="container">
+        
+        <form class="dim" #DealForm="ngForm" (ngSubmit)="submitForm(DealForm)" novalidate>
+            <h2 class="h2">Create Deal</h2><br>
+            <div class = "check" *ngIf="!dealcheck">
+                <span class="msg">&#10687; Deal Number Already Exist </span>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <label for="deal_id" class="col-sm-3 control-label">Deal ID</label>
+                    <div class="col-sm-9" id="deal_id" ><input type ="number" (click)="onclickfn()" name="deal_id" class="form-control" placeholder="Deal ID" pattern="^[0-9]*$" required minlength="3" maxlength="4" #deal_id="ngModel"
+                        [(ngModel)]="deal2.deal_id">
+                    <div
+                    *ngIf="!deal_id?.valid && (deal_id?.dirty ||deal_id?.touched)" class="errors">
+                    <div *ngIf="deal_id.errors.required">
+                    <span class="msg">&#9888; Deal ID is required</span>
+                    </div>
+                    <div *ngIf="deal_id.errors.minlength">
+                        <span class="msg">&#9888; Min Length is 3</span>
+                    </div>
+                    <div *ngIf="deal_id.errors.pattern">
+                        <span class="msg">&#9888; Enter only digits</span>
+                    </div>
+                    </div>
+                </div>
+                </div><br>
+
+                <div class="row">
+                    <label for="departure_location" class="col-sm-3 control-label">Origin</label>
+                    <div class="col-sm-9" id="departure_location"><input type ="text" name="departure_location" class="form-control" placeholder="Origin" required #departure_location="ngModel"
+                        [(ngModel)]="deal2.departure_location">
+
+                        <div
+                        *ngIf="!departure_location?.valid && (departure_location?.dirty ||departure_location?.touched)" class="errors">
+                        <div *ngIf="departure_location.errors.required">
+                            <span class="msg">&#9888; Origin is required</span>
+                        </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <label for="arrival_location" class="col-sm-3 control-label">Destination</label>
+                    <div class="col-sm-9" id="arrival_location"><input type ="text" name="arrival_location" class="form-control" placeholder="Destination" required #arrival_location="ngModel"
+                        [(ngModel)]="deal2.arrival_location">
+                   
+                        <div
+                        *ngIf="!arrival_location?.valid && (arrival_location?.dirty ||arrival_location?.touched)" class="errors">
+                        <div *ngIf="arrival_location.errors.required">
+                            <span class="msg">&#9888; Destination is required</span>
+                        </div>
+                        </div> 
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <label for="deal_cost" class="col-sm-3 control-label">Price</label>
+                    <div class="col-sm-9" id="deal_cost"><input type ="number" name="deal_cost" class="form-control" placeholder="Deal Price" required #deal_cost="ngModel"
+                        [(ngModel)]="deal2.deal_cost">
+                        <div
+                        *ngIf="!deal_cost?.valid && (deal_cost?.dirty ||deal_cost?.touched)" class="errors">
+                        <div *ngIf="deal_cost.errors.required">
+                            <span class="msg">&#9888; Enter deal price</span>
+                        </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <label for="duration" class="col-sm-3 control-label">Duration</label>
+                    <div class="col-sm-9" id="duration"><input type ="text" name="duration" class="form-control" placeholder="Deal Duration in days" required #duration="ngModel"
+                        [(ngModel)]="deal2.duration">
+                        <div
+                        *ngIf="!duration?.valid && (duration?.dirty ||duration?.touched)" class="errors">
+                        <div *ngIf="duration.errors.required">
+                            <span class="msg">&#9888; Deal duration is required</span>
+                        </div>
+                        </div>
+                    </div>
+                </div><br>
+                
+                <br>
+                <div>
+                    <div>
+                        <button class="bt add" type="submit" [disabled]="!DealForm.valid" [ngStyle]="{'cursor': (!DealForm.valid? 'not-allowed':'pointer')}" >Add Deal</button>
+                    </div>
+                    <div>
+                        <button class="bt" onclick="window.location='http://localhost:4200/Deals';">Cancel</button>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+<app-adminfooter></app-adminfooter>

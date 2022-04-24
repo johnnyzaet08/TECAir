@@ -1,0 +1,135 @@
+<app-adminheader *ngIf="!isLoggedIn"></app-adminheader>
+<app-adminloggedinheader *ngIf="isLoggedIn == true"></app-adminloggedinheader>
+<div class="bg">
+  <div class="container">
+    <form
+      class="dim"
+      #AddFlightForm="ngForm"
+      (ngSubmit)="submitForm(AddFlightForm)"
+      novalidate
+    >
+      <h2 class="h2">Add Bag</h2>
+      <br />
+      <div class="check" *ngIf="!flightcheck">
+        <span class="msg">&#10687; Flight Number Already Exist </span>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <label for="UserID" class="col-sm-3 control-label">User ID</label>
+          <div class="col-sm-9" id="UserID">
+            <input
+              type="text"
+              (click)="onclickfn()"
+              name="UserID"
+              class="form-control"
+              placeholder="Insert User ID"
+              pattern="^[0-9]*$"
+              required
+              minlength="3"
+              maxlength="8"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <label for="owner" class="col-sm-3 control-label">Owner</label>
+          <div class="col-sm-9" id="owner">
+            <input
+              type="text"
+              (click)="onclickfn()"
+              name="owner"
+              class="form-control"
+              placeholder="Insert Owner Name"
+              pattern="^[0-9]*$"
+              required
+              minlength="3"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <label for="bag_number" class="col-sm-3 control-label"
+            >Bag Number</label
+          >
+          <div class="col-sm-9" id="bag_number">
+            <input
+              type="text"
+              (click)="onclickfn()"
+              name="bag_number"
+              class="form-control"
+              placeholder="Insert Bag Number"
+              pattern="^[0-9]*$"
+              required
+              minlength="3"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <label for="weight" class="col-sm-3 control-label">Weight</label>
+          <div class="col-sm-9" id="weight">
+            <input
+              type="text"
+              (click)="onclickfn()"
+              name="weight"
+              class="form-control"
+              placeholder="Insert Bag Weight"
+              pattern="^[0-9]*$"
+              required
+              minlength="3"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div class="row">
+          <label for="colour" class="col-sm-3 control-label">Colour</label>
+          <div class="col-sm-9" id="colour">
+            <input
+              type="text"
+              (click)="onclickfn()"
+              name="colour"
+              class="form-control"
+              placeholder="Insert Bag Colour"
+              pattern="^[0-9]*$"
+              required
+              minlength="3"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <br />
+
+        <div>
+          <div>
+            <button
+              class="bt add"
+              type="submit"
+              [disabled]="!AddFlightForm.valid"
+              [ngStyle]="{
+                cursor: !AddFlightForm.valid ? 'not-allowed' : 'pointer'
+              }"
+            >
+              Add Flight
+            </button>
+          </div>
+          <div>
+            <button
+              class="bt"
+              onclick="window.location='http://localhost:4200/ViewAllFlights';"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<app-adminfooter></app-adminfooter>

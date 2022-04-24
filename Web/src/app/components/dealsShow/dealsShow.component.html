@@ -1,0 +1,46 @@
+<div class="bg">  
+    <div class="logo">
+        <a [routerLink]="['/']"><img style="width: 8rem; height: 8rem;" src="../../../assets/logo3.png"></a>     
+     </div>
+    <div class="view">
+        <table class="tbl">
+            <thead>
+                <tr>
+                    <th class="head" colspan="0">
+                        <span>
+                            <img src="../../assets/adminheader.png" class="head_logo " >
+                        </span>
+                    </th>
+                    <th class="h">
+                        <h1 class="h1">
+                        DEALS
+                    </h1>
+                    </th>
+                </tr>
+                <tr class="th">
+                    <th class="th">Deal ID</th>
+                    <th class="th">Origin</th>
+                    <th class="th">Destination</th>
+                    <th class="th">Price</th>
+                    <th class="th">Duration</th>                          
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr" *ngFor="let deal of dealsCopy">
+                    <td class="td">
+                        <div>
+                            <img src="../../assets/adminplanelogo.png" class="head_logo">
+                        </div>
+                        {{deal.deal_id}}
+                    </td>
+                    <td class="td">{{deal.departure_location}}</td>
+                    <td class="td">{{deal.arrival_location}}</td>
+                    <td class="td">{{deal.deal_cost}}</td>
+                    <td class="td">{{deal.duration}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-footer></app-footer>

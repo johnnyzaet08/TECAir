@@ -13,7 +13,7 @@
     xmlns:converter="clr-namespace:TecAir_MobileApp.Converters"
     xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:TecAir_MobileApp.Views"
-    xmlns:viewModel="clr-namespace:TecAir_MobileApp.ViewModels"
+    xmlns:viewModel="clr-namespace:TecAir_MobileApp.ViewModels" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     Title="Business Registration Form"
     BackgroundColor="{DynamicResource Gray-100}"
     NavigationPage.HasNavigationBar="False">
@@ -54,8 +54,23 @@
                 Padding="16,24"
                 BackgroundColor="{DynamicResource Gray-100}"
                 Spacing="0">
-               
 
+                <buttons:SfButton
+                            Margin="250,0,0,4"
+                            FontSize="12"
+                            Command="{Binding ConfigCommand}"
+                            Style="{StaticResource TransparentButtonStyle}"
+                            Text="Configurations"
+                            TextColor="{DynamicResource Gray-800}" />
+                <!--  Type of business  -->
+                <!--  Sign-up button  -->
+                <buttons:SfButton
+                            Margin="125,0,0,4"
+                            FontSize="16"
+                            Command="{Binding PromotionsCommand}"
+                            Style="{StaticResource TransparentButtonStyle}"
+                            Text="Promotions"
+                            TextColor="{DynamicResource PrimaryColor}" />
                 <!--  Type of business  -->
                 <Label
                     Margin="0,24,0,4"
@@ -129,7 +144,7 @@
                         SelectedValue="{Binding Business, Mode=TwoWay}"
                         Style="{StaticResource TextInputLayoutComboBoxStyle}"
                         VerticalOptions="Center"
-                        Watermark="Adults(12+)">
+                        Watermark="Select the number of people">
                         <combobox:SfComboBox.ComboBoxSource>
                             <ListCollection:List x:TypeArguments="x:String">
                                 <x:String>1</x:String>
@@ -144,49 +159,35 @@
                         </combobox:SfComboBox.ComboBoxSource>
                     </combobox:SfComboBox>
                 </inputLayout:SfTextInputLayout>
-                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
-                    <combobox:SfComboBox
-                        x:Name="ChildrenPicker"
-                        SelectedValue="{Binding Business, Mode=TwoWay}"
-                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
-                        VerticalOptions="Center"
-                        Watermark="Children(2-11)">
-                        <combobox:SfComboBox.ComboBoxSource>
-                            <ListCollection:List x:TypeArguments="x:String">
-                                <x:String>1</x:String>
-                                <x:String>2</x:String>
-                                <x:String>3</x:String>
-                                <x:String>4</x:String>
-                                <x:String>5</x:String>
-                                <x:String>6</x:String>
-                                <x:String>7</x:String>
-                                <x:String>8</x:String>
-                            </ListCollection:List>
-                        </combobox:SfComboBox.ComboBoxSource>
-                    </combobox:SfComboBox>
-                </inputLayout:SfTextInputLayout>
-                <inputLayout:SfTextInputLayout Style="{DynamicResource TextInputLayoutStyle}">
-                    <combobox:SfComboBox
-                        x:Name="InfantsPicker"
-                        SelectedValue="{Binding Business, Mode=TwoWay}"
-                        Style="{StaticResource TextInputLayoutComboBoxStyle}"
-                        VerticalOptions="Center"
-                        Watermark="Infants(0-1)">
-                        <combobox:SfComboBox.ComboBoxSource>
-                            <ListCollection:List x:TypeArguments="x:String">
-                                <x:String>1</x:String>
-                                <x:String>2</x:String>
-                                <x:String>3</x:String>
-                                <x:String>4</x:String>
-                                <x:String>5</x:String>
-                                <x:String>6</x:String>
-                                <x:String>7</x:String>
-                                <x:String>8</x:String>
-                            </ListCollection:List>
-                        </combobox:SfComboBox.ComboBoxSource>
-                    </combobox:SfComboBox>
-                </inputLayout:SfTextInputLayout>
-               
+                <StackLayout Orientation="Horizontal"
+                     Margin="0,24,0,4">
+                    <Label Text="Round Trip"
+                   VerticalOptions="Center" />
+                    <Switch x:Name="includeSwitch"
+                            Toggled="includeSwitch_Toggled"/>
+                
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Departure Date:"/>
+
+                    <DatePicker x:Name="startDatePicker"
+                    Format="D"
+                    Margin="0,24,0,4"
+                     />
+
+                    <Label Text="Return Date:"/>
+                    <DatePicker x:Name="endDatePicker"
+                    MinimumDate="{Binding Source={x:Reference startDatePicker},
+                                          Path=Date}"
+                    Format="D"
+                    Margin="0,24,0,4"
+                    DateSelected="endDatePicker_DateSelected"/>
+                    
+                    <Label x:Name="resultLabel"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center" />
+
+                </StackLayout>
                 <!--  Submit Button  -->
                 <buttons:SfButton
                     Margin="0,24,0,0"

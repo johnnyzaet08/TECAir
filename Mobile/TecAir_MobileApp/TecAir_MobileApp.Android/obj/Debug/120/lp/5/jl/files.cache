@@ -1,4 +1,35 @@
-﻿C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\dropdownbuttonimage.png
-C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\layout\customizedimageview.xml
-C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\layout\customizedview.xml
-C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\layout\sfcombobox_layout.xml
+﻿D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_checked_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_checked_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_checked_unchecked_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_checked_unchecked_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_checked_unchecked_path.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_checked_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_checked_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_checked_outer.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_unchecked_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_unchecked_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_indeterminate_unchecked_path.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_indeterminate_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_indeterminate_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_indeterminate_outer.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_inner.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_null.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\anim\sfcheckbox_unchecked_outer.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\color\control_checkable_material.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_animation.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_checked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_checked_indeterminate.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_checked_unchecked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_indeterminate.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_indeterminate_checked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_indeterminate_unchecked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_unchecked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_unchecked_checked.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\drawable\sfcheckbox_unchecked_indeterminate.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\interpolator\sfcheckbox_checked_interpolator0.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\interpolator\sfcheckbox_checked_interpolator1.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\interpolator\sfcheckbox_indeterminate_interpolator1.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\interpolator\sfcheckbox_unchecked_interpolator0.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\interpolator\sfcheckbox_unchecked_interpolator1.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\values\attrs.xml
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp.Android\obj\Debug\120\lp\5\jl\res\values\values.xml

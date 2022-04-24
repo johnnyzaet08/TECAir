@@ -1,0 +1,58 @@
+<app-adminheader *ngIf="!isLoggedIn"></app-adminheader>
+ <app-adminloggedinheader *ngIf="isLoggedIn == true"></app-adminloggedinheader>
+
+ <div class="bg">    
+    <div class="view">
+        <table class="tbl">
+            <thead>
+                <tr>
+                    <th class="head" colspan="3">
+                        <span>
+                            <img src="../../assets/adminheader.png" class="head_logo " >
+                        </span>
+                    </th>
+                    <th class="h">
+                        <h1 class="h1">
+                        DEALS
+                    </h1>
+                    </th>
+                </tr>
+                <tr class="th">
+                    <th class="th">Deal ID</th>
+                    <th class="th">Origin</th>
+                    <th class="th">Destination</th>
+                    <th class="th">Price</th>
+                    <th class="th">Duration</th> 
+                    <th class="th">Action</th>                         
+                    <th class="th"></th>
+                    <th class="th"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr" *ngFor="let deal of dealsCopy">
+                    <td class="td">
+                        <div>
+                            <img src="../../assets/adminplanelogo.png" class="head_logo">
+                        </div>
+                        {{deal.deal_id}}
+                    </td>
+                    <td class="td">{{deal.departure_location}}</td>
+                    <td class="td">{{deal.arrival_location}}</td>
+                    <td class="td">{{deal.deal_cost}}</td>
+                    <td class="td">{{deal.duration}}</td>
+                    <td class="td" colspan="4">
+                        
+                        <button class="bt update" [routerLink]="['/dealsUpdate/']">Update</button><br>
+                        
+                        <!--
+                        <button class="bt update" (click)="updateDeal()">Update</button><br>
+                        -->
+                        <button class="bt delete" [routerLink]="['/dealsDelete/']">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<app-adminfooter></app-adminfooter>

@@ -1,22 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj": {}
+    "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj": {
+    "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
+        "projectUniqueName": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
         "projectName": "TecAir_MobileApp.Android",
-        "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
+        "projectPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
         "packagesPath": "C:\\Users\\gabos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\obj\\",
+        "outputPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid12.0"
@@ -28,8 +32,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
-                "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj"
+              "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
+                "projectPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj"
               }
             }
           }
@@ -38,6 +42,18 @@
       "frameworks": {
         "monoandroid12.0": {
           "dependencies": {
+            "SkiaSharp.Extended": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Svg": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
               "version": "[20.1.0.48, )"
@@ -81,23 +97,31 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2196, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
+    "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectUniqueName": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "projectName": "TecAir_MobileApp",
-        "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "packagesPath": "C:\\Users\\gabos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
+        "outputPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -128,6 +152,18 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "SkiaSharp.Extended": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Svg": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.68.0, )"
+            },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
               "version": "[20.1.0.48, )"
@@ -171,6 +207,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2196, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

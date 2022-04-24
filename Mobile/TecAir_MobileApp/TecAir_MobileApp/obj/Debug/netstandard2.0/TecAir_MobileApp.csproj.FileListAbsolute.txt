@@ -43,3 +43,92 @@ C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.
 C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SearchView.xaml.g.cs
 C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Templates\ProductListTemplate.xaml.g.cs
 C:\Users\gabos\Desktop\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\TravelsAvailableView.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.deps.json
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.dll
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.pdb
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.csproj.AssemblyReference.cache
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\AvatarViewStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\BorderStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\BoxViewStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ButtonStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\CheckBoxStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\Colors.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ComboBoxStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\EditorStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\EntryStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\FontIcons.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\FrameStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\GradientViewStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\LabelStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ListViewStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\RadioButtonStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\RatingStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\SegmentedControlStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\TextInputLayoutStyles.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Themes\DarkTheme.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Themes\LightTheme.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\ContactEmailEntry.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Page1View.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SearchView.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SimpleEmailEntry.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SimpleLoginPage.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Templates\ProductListTemplate.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\TravelsAvailableView.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.AssemblyInfoInputs.cache
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.AssemblyInfo.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.csproj.CoreCompileInputs.cache
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.dll
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\refint\TecAir_MobileApp.dll
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.pdb
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\ref\TecAir_MobileApp.dll
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Page2View.xaml.g.cs
+C:\Users\gabos\Desktop\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\PageSView.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.deps.json
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.dll
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\bin\Debug\netstandard2.0\TecAir_MobileApp.pdb
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.csproj.AssemblyReference.cache
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\AvatarViewStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\BorderStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\BoxViewStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ButtonStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\CheckBoxStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\Colors.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ComboBoxStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\EditorStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\EntryStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\FontIcons.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\FrameStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\GradientViewStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\LabelStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\ListViewStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\RadioButtonStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\RatingStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\SegmentedControlStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Styles\TextInputLayoutStyles.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Themes\DarkTheme.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Themes\LightTheme.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\AddCardPageView.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\ContactEmailEntry.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Page1View.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Page2View.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SearchView.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SimpleEmailEntry.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\SimpleLoginPage.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\Templates\ProductListTemplate.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.AssemblyInfoInputs.cache
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.AssemblyInfo.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.csproj.CoreCompileInputs.cache
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.dll
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\refint\TecAir_MobileApp.dll
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\TecAir_MobileApp.pdb
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\ref\TecAir_MobileApp.dll
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\PaymentView.xaml.g.cs
+D:\TEC\Bases de Datos\TECAir\Mobile\TecAir_MobileApp\TecAir_MobileApp\obj\Debug\netstandard2.0\Views\PageFlightView.xaml.g.cs

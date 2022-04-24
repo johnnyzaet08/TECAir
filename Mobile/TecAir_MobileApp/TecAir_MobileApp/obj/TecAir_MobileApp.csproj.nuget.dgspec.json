@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {}
+    "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
+    "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectUniqueName": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "projectName": "TecAir_MobileApp",
-        "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "packagesPath": "C:\\Users\\gabos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
+        "outputPath": "D:\\TEC\\Bases de Datos\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -45,6 +49,18 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "SkiaSharp.Extended": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Svg": {
+              "target": "Package",
+              "version": "[1.60.0, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[1.68.0, )"
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
@@ -89,6 +105,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2196, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
