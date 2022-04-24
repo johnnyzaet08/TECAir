@@ -9,6 +9,17 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
+            <CollectionView ItemsSource="{Binding Adminss}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding username}"/>
+                            <Label Text="{Binding password}"/>
+
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
             <Label
                     Margin="0,600,0,4"
                     FontFamily="Montserrat-Medium"

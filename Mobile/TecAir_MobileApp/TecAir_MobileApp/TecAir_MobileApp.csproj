@@ -18,6 +18,7 @@
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
     <None Remove="Resources\Fonts\Montserrat-SemiBold.ttf" />
     <None Remove="Resources\Fonts\UIFontIcons.ttf" />
+    <None Remove="sqliteTEC.db" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,12 +29,14 @@
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-SemiBold.ttf" />
     <EmbeddedResource Include="Resources\Fonts\UIFontIcons.ttf" />
+    <EmbeddedResource Include="Data\sqliteTEC.db" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="20.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.Cards" Version="20.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="20.1.0.48" />

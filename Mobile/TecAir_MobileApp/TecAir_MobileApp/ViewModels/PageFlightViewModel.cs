@@ -1,4 +1,9 @@
-﻿using TecAir_MobileApp.Validators;
+﻿using System.Collections.ObjectModel;
+using System.IO;
+using System.Reflection;
+using TecAir_MobileApp.DataBaseConnections;
+using TecAir_MobileApp.DataBaseModels;
+using TecAir_MobileApp.Validators;
 using TecAir_MobileApp.Validators.Rules;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -12,17 +17,33 @@ namespace TecAir_MobileApp.ViewModels
     public class PageFlightViewModel : LoginViewModel
     {
         #region Constructor
-
+        public ObservableCollection<Admins> Adminss { get; set; } = new ObservableCollection<Admins>();
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchViewModel" /> class
         /// </summary>
         public PageFlightViewModel()
         {
+            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
+
+            using (Stream stream = assembly.GetManifestResourceStream("TecAir_MobileApp.Data.sqliteTEC.db"))
+            {
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    stream.CopyTo(memoryStream);
+
+                    File.WriteAllBytes(AdminsConnection.DbPath, memoryStream.ToArray());
+                }
+            }
+            AdminsConnection connect = new AdminsConnection();
+            foreach (var admin in connect.List())
+            {
+                Adminss.Add(admin);
+            }
             this.InitializeProperties();
             //this.PromotionsCommand = new Command(this.PromotionsClicked);
-            this.SubmitCommand = new Command(this.SubmitClicked);
-
+            this.SubmitCommand = new Command(this.SubmitClicked); 
         }
+
 
         #endregion
 
