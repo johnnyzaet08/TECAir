@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -10,7 +11,8 @@ namespace new_airline_api
     {
         public static void Register(HttpConfiguration config)
         {
-            var cors = new EnableCorsAttribute("*", "*", "*");
+                        
+            var cors = new EnableCorsAttribute("http://www.example.com", "*", "*");
             config.EnableCors(cors);
 
             // Web API routes

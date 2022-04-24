@@ -36,8 +36,9 @@ export class AdminloginComponent implements OnInit {
   {
    
     this.timer = true
-    //let response = await this.loginservice.login(AdminLoginForm.value)
-    let response = "Verified";
+    let response = await this.loginservice.login(AdminLoginForm.value)
+    //console.log(response);
+    //let response = "Verified";
 
     if(response == "Verified")
       {

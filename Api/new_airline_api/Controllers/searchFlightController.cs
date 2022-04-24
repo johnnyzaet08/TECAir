@@ -11,8 +11,15 @@ namespace new_airline_api.Controllers
     public class SearchFlightController : ApiController
     {
         private new_airlineEntities entity = new new_airlineEntities();
+
+        /*[HttpGet]
+        public string searchflight()
+        {
+            return "hola";
+        }*/
+        
         [HttpGet]
-        public IHttpActionResult searchflight(string departure, string arrival, string day, System.DateTime date, int seats)
+        public IHttpActionResult searchflight(string departure, string arrival, string day, int seats)
         {
             if (!ModelState.IsValid)
             {
@@ -20,6 +27,7 @@ namespace new_airline_api.Controllers
             }
             try
             {
+                DateTime date = DateTime.Today;
                 List<new_airline_api.Models.sp_searchflight_Result> list_of_flights = new List<new_airline_api.Models.sp_searchflight_Result>();
                 var searched_flights = entity.sp_searchflight(departure, arrival, date, seats, day);
                 foreach (var flight in searched_flights)

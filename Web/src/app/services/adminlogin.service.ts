@@ -19,6 +19,7 @@ async login(data:any)
   try 
   {
       let a = await this.httpClient.post(this.apiServer,data,this.httpOptions).toPromise()
+      console.log(a);
       return "Verified"
   }
   catch(error)
