@@ -86,7 +86,7 @@ namespace TecAir_MobileApp.ViewModels
         private async void SubmitClicked(object obj)
         {
             
-                await NavigationService.NavigateToAsync<TravelsAvailableViewModel>();
+                await NavigationService.NavigateToAsync<Page2ViewModel>();
             
         }
 

@@ -18,5 +18,15 @@ namespace TecAir_MobileApp.Views
         {
             this.InitializeComponent();
         }
+
+        private void endDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        {
+
+        }
+
+        private void includeSwitch_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
     }
 }

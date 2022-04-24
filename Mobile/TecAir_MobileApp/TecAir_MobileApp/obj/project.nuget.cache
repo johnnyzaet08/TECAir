@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rf/1UVo9gjnbTEt1+IqZF9nTvkPY45zWzgAC+T0986QyvOuui5DoJeAazRARMsZ6mvbpzA7e4ZIaJbP1/FGQcw==",
+  "dgSpecHash": "GaFKSEjZTcU42n9rdGDn8WIF+tAGMyXByX8tqRsESa3MArbsThWJm5OpzKNitRNpogoQQd5mZIvitRiJKTIV4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+  "projectFilePath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabos\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\gabos\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

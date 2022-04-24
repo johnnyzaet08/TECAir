@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {}
+    "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
+    "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectUniqueName": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "projectName": "TecAir_MobileApp",
-        "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
+        "projectPath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj",
         "packagesPath": "C:\\Users\\gabos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
+        "outputPath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\gabos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

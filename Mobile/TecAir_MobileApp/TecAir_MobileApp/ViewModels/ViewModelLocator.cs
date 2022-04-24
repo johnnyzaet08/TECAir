@@ -17,7 +17,8 @@ namespace TecAir_MobileApp.ViewModels
             _container.Register<LoginViewModel>();
             _container.Register<Page1ViewModel>();  
             _container.Register<SearchViewModel>();
-            _container.Register<TravelsAvailableViewModel>();   
+            _container.Register<TravelsAvailableViewModel>();
+            _container.Register<Page2ViewModel>();
            
        
 

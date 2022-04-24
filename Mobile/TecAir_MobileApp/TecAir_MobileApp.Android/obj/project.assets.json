@@ -3729,21 +3729,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabos\\.nuget\\packages\\": {}
+    "C:\\Users\\gabos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
       "projectName": "TecAir_MobileApp.Android",
-      "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
+      "projectPath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\TecAir_MobileApp.Android.csproj",
       "packagesPath": "C:\\Users\\gabos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\gabos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid12.0"
@@ -3755,8 +3760,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
-              "projectPath": "C:\\Users\\gabos\\Desktop\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj"
+            "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj": {
+              "projectPath": "C:\\Users\\gabos\\Pictures\\TECAir\\Mobile\\TecAir_MobileApp\\TecAir_MobileApp\\TecAir_MobileApp.csproj"
             }
           }
         }
