@@ -49,9 +49,10 @@ import { AdminfooterComponent } from './components/adminfooter/adminfooter.compo
 import { AdminloggedinheaderComponent } from './components/adminloggedinheader/adminloggedinheader.component';
 import { EticketComponent } from './components/eticket/eticket.component';
 import { DealsComponent } from './components/deals/deals.component';
-import { Deals2Component } from './components/deals2/deals2.component';
+import { DealsCreateComponent } from './components/dealsCreate/dealsCreate.component';
 import { DealsUpdateComponent } from './components/dealsUpdate/dealsUpdate.component';
 import { DealsShowComponent } from './components/dealsShow/dealsShow.component';
+import { DealsDeleteComponent } from './components/dealsDelete/dealsDelete.component';
 
 @NgModule({
   declarations: [
@@ -70,8 +71,9 @@ import { DealsShowComponent } from './components/dealsShow/dealsShow.component';
     UpdateflightComponent,
     ViewallflightsComponent,
     DealsComponent,
-    Deals2Component,
+    DealsCreateComponent,
     DealsUpdateComponent,
+    DealsDeleteComponent,
     PassengersComponent,
     AdminloginComponent,
 

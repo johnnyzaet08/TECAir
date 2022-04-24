@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Deal } from 'src/app/models/deal';
+import { DealService } from 'src/app/services/dealService.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -9,24 +10,33 @@ import Swal from 'sweetalert2';
   styleUrls: ['./dealsUpdate.component.css']
 })
 export class DealsUpdateComponent implements OnInit {
-  deal2:Deal;
+  deal:Deal;
   dealsCopy: Deal[];
   ELEMENT_DATA:Deal[];
 
   flightcheck=false;
   isLoggedIn: boolean;
   
-  constructor(private router: Router) { }
+  constructor(private service:DealService, private routers:ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     
-    this.deal2={
+    this.deal={
       deal_id:null,
       deal_cost:null,
       departure_location:'',
       arrival_location:'',
       duration:null
     }
+    
+    this.service.getByDealNumber(this.routers.snapshot.params['dealnumber']).subscribe((data)=>
+    this.deal={
+      deal_id:null,
+      deal_cost:null,
+      departure_location:'',
+      arrival_location:'',
+      duration:null
+    })
 
     this.ELEMENT_DATA = [
       {deal_id: 1632, deal_cost: 300, departure_location: "New Delhi", arrival_location: "Mumbai", duration: "2022-01-16"},
@@ -35,8 +45,14 @@ export class DealsUpdateComponent implements OnInit {
       {deal_id: 1635, deal_cost: 150, departure_location: "Hyderabad", arrival_location: "New Delhi", duration: "2022-05-20"}
     ];
 
-    this.dealsCopy = this.ELEMENT_DATA;
+    //this.dealsCopy = this.ELEMENT_DATA;
     
+    this.service.getAll().subscribe((data: Deal[])=>{
+      this.dealsCopy = data;
+      console.log(this.dealsCopy);
+      //this.flights=this.flights.sort();
+    }) 
+
     if(!sessionStorage.getItem('admin'))
     {
       Swal.fire({
@@ -59,7 +75,7 @@ export class DealsUpdateComponent implements OnInit {
     this.flightcheck=true;
   }
   
-
+  /*
   submitForm(DealForm) {
     
     for(let i=0;i<this.dealsCopy.length;i++)
@@ -86,6 +102,24 @@ export class DealsUpdateComponent implements OnInit {
     
     this.router.navigate([`${'/Deals'}`]);
     
+  }
+  */
+  
+  submitForm(DealForm) {
+    
+    DealForm.value.deal_id = this.deal.deal_id;
+    DealForm.value.departure_location = this.deal.departure_location;
+    DealForm.value.arrival_location = this.deal.arrival_location;
+    DealForm.value.deal_cost = this.deal.deal_cost;
+    DealForm.value.duration = this.deal.duration;
+
+    Swal.fire('Updating Deal');    Swal.showLoading();
+    this.service.updateDeal(DealForm.value).subscribe((data)=>
+     console.log(data,"Deal Added")
+   )
+   Swal.close();
+   this.router.navigate([`${'/Deals'}`]);
+  
   }
 
 }

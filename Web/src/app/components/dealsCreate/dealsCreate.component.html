@@ -5,7 +5,7 @@
         
         <form class="dim" #DealForm="ngForm" (ngSubmit)="submitForm(DealForm)" novalidate>
             <h2 class="h2">Create Deal</h2><br>
-            <div class = "check" *ngIf="!flightcheck">
+            <div class = "check" *ngIf="!dealcheck">
                 <span class="msg">&#10687; Deal Number Already Exist </span>
             </div>
             <div class="form-group">

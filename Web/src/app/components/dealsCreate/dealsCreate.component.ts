@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Deal } from 'src/app/models/deal';
-import { DealsComponent } from "src/app/components/deals/deals.component";
+import { DealService } from 'src/app/services/dealService.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-deals2',
-  templateUrl: './deals2.component.html',
-  styleUrls: ['./deals2.component.css']
+  selector: 'app-dealsCreate',
+  templateUrl: './dealsCreate.component.html',
+  styleUrls: ['./dealsCreate.component.css']
 })
-export class Deals2Component implements OnInit {
+export class DealsCreateComponent implements OnInit {
   deal2:Deal;
   dealsCopy: Deal[];
   ELEMENT_DATA:Deal[];
 
-  flightcheck=true;
+  dealcheck=true;
   isLoggedIn: boolean;
   
-  constructor(private router: Router) { }
+  constructor(private service:DealService, private router: Router) { }
 
   ngOnInit(): void {
     
@@ -28,7 +28,7 @@ export class Deals2Component implements OnInit {
       arrival_location:'',
       duration:null
     }
-
+    
     this.ELEMENT_DATA = [
       {deal_id: 1632, deal_cost: 300, departure_location: "New Delhi", arrival_location: "Mumbai", duration: "2022-01-16"},
       {deal_id: 1633, deal_cost: 350, departure_location: "Madurai", arrival_location: "Meerut", duration: "2022-08-10"},
@@ -36,8 +36,12 @@ export class Deals2Component implements OnInit {
       {deal_id: 1635, deal_cost: 150, departure_location: "Hyderabad", arrival_location: "New Delhi", duration: "2022-05-20"}
     ];
 
-    this.dealsCopy = this.ELEMENT_DATA;
+    //this.dealsCopy = this.ELEMENT_DATA;
     
+    this.service.getAll().subscribe((data: Deal[])=>{
+      this.dealsCopy = data; 
+    })
+
     if(!sessionStorage.getItem('admin'))
     {
       Swal.fire({
@@ -57,10 +61,11 @@ export class Deals2Component implements OnInit {
 
   onclickfn()
   {
-    this.flightcheck=true;
+    this.dealcheck=true;
   }
   
 
+  /*
   submitForm(DealForm) {
     
     for(let i=0;i<this.dealsCopy.length;i++)
@@ -93,6 +98,30 @@ export class Deals2Component implements OnInit {
       this.router.navigate([`${'/Deals'}`]);
     
     }
+  }
+  */
+
+  submitForm(DealForm) {
+    
+    for(let i=0;i<this.dealsCopy.length;i++)
+    {
+      if(this.dealsCopy[i].deal_id==DealForm.value.deal_id)
+        {
+          this.dealcheck=false;
+          window.scrollTo(0,1);
+        }
+    }
+  
+    if(this.dealcheck==true)
+    {
+      Swal.fire('Adding Deal');    Swal.showLoading();
+      this.service.addDeal(DealForm.value).subscribe((data)=>
+      console.log(data,"Deal Added")
+      )
+      Swal.close();
+    this.router.navigate([`${'/Deals'}`]);
+    }
+    
   }
 
 }

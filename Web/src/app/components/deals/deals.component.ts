@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Deal } from 'src/app/models/deal';
+import { DealService } from 'src/app/services/dealService.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -18,7 +19,7 @@ export class DealsComponent implements OnInit {
   index = 0;
   isLoggedIn: boolean;
 
-  constructor(private routers:Router) {}
+  constructor(private service:DealService, private routers:Router) {}
 
   ngOnInit() {
     
@@ -39,7 +40,13 @@ export class DealsComponent implements OnInit {
 
     this.dealsTemp = [];
 
-    this.dealsCopy = this.ELEMENT_DATA;
+    //this.dealsCopy = this.ELEMENT_DATA;
+
+    this.service.getAll().subscribe((data: Deal[])=>{
+      this.dealsCopy = data;
+      console.log(this.dealsCopy);
+      //this.flights=this.flights.sort();
+    }) 
    
     if(!sessionStorage.getItem('admin'))
     {

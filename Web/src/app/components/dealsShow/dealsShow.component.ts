@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { Deal } from 'src/app/models/deal';
+import { DealService } from 'src/app/services/dealService.service';
 
 @Component({
   selector: 'app-dealsShow',
@@ -11,7 +12,7 @@ export class DealsShowComponent implements OnInit {
   dealsCopy: Deal[];
   ELEMENT_DATA:Deal[];
 
-  constructor() { }
+  constructor(private service:DealService) { }
 
   ngOnInit(): void {
 
@@ -22,7 +23,13 @@ export class DealsShowComponent implements OnInit {
       {deal_id: 1635, deal_cost: 150, departure_location: "Hyderabad", arrival_location: "New Delhi", duration: "2022-05-20"}
     ];
 
-    this.dealsCopy = this.ELEMENT_DATA;
+    //this.dealsCopy = this.ELEMENT_DATA;
+
+    this.service.getAll().subscribe((data: Deal[])=>{
+      this.dealsCopy = data;
+      console.log(this.dealsCopy);
+      //this.flights=this.flights.sort();
+    }) 
 
     Swal.fire({
       title: 'Current promotions',

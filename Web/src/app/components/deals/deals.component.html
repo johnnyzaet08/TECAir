@@ -47,7 +47,7 @@
                         <!--
                         <button class="bt update" (click)="updateDeal()">Update</button><br>
                         -->
-                        <button class="bt delete" (click)="deleteDeal(deal.deal_id)">Delete</button>
+                        <button class="bt delete" [routerLink]="['/dealsDelete/']">Delete</button>
                     </td>
                 </tr>
             </tbody>
