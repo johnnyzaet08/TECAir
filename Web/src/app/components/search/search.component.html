@@ -99,46 +99,6 @@
         </div>
         <div style="font-size: 1.5rem" class="form__inputcontainer">
           <mat-form-field appearance="outline" [hideRequiredMarker]="true">
-            <mat-label>Departure</mat-label>
-            <input
-              matInput
-              [matDatepicker]="deptpicker"
-              [min]="minDate"
-              [max]="maxDate"
-              matSelect
-              [(ngModel)]="model.departuredate"
-              name="departure"
-              required
-            />
-            <mat-datepicker-toggle
-              matSuffix
-              [for]="deptpicker"
-            ></mat-datepicker-toggle>
-            <mat-datepicker #deptpicker></mat-datepicker>
-          </mat-form-field>
-        </div>
-        <div style="font-size: 1.5rem" class="form__inputcontainer">
-          <mat-form-field appearance="outline" [hideRequiredMarker]="true">
-            <mat-label>Arrival</mat-label>
-            <input
-              matInput
-              [matDatepicker]="arrpicker"
-              [min]="minDate"
-              [max]="maxDate"
-              matSelect
-              [(ngModel)]="model.arrivaldate"
-              name="arrival"
-              required
-            />
-            <mat-datepicker-toggle
-              matSuffix
-              [for]="arrpicker"
-            ></mat-datepicker-toggle>
-            <mat-datepicker #arrpicker></mat-datepicker>
-          </mat-form-field>
-        </div>
-        <div style="font-size: 1.5rem" class="form__inputcontainer">
-          <mat-form-field appearance="outline" [hideRequiredMarker]="true">
             <mat-label>Travellers</mat-label>
             <mat-select name="travellers" [(ngModel)]="model.seats" required>
               <mat-option *ngFor="let count of travellers" [value]="count">

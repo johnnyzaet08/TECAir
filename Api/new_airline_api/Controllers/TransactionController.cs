@@ -13,6 +13,24 @@ namespace new_airline_api.Controllers
     public class TransactionController : ApiController
     {
         private new_airlineEntities db = new new_airlineEntities();
+
+        [HttpGet]
+        public IHttpActionResult GetTransaction(Transaction_n_Passenger trans_pass)
+        {
+            try
+            {
+                Transaction transaction = new Transaction();
+
+                var user = db.User_Master.Where(x => x.email_id == trans_pass.email).FirstOrDefault();
+                return Ok(user);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
+        }
+
+            [HttpPost]
         public IHttpActionResult PostTransaction(Transaction_n_Passenger trans_pass)
         {
             
@@ -32,7 +50,7 @@ namespace new_airline_api.Controllers
                 }
 
                 transaction.flight_number = trans_pass.flight_number;
-                transaction.booking_date = trans_pass.booking_date;
+                transaction.booking_date = DateTime.Now;
                 transaction.number_of_seats = trans_pass.number_of_seats;
                 transaction.seat_type = trans_pass.seat_type;
                 transaction.travel_date = trans_pass.travel_date;

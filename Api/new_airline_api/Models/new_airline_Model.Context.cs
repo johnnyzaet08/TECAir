@@ -102,20 +102,17 @@ namespace new_airline_api.Models
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_Addflightschedule", flightnoParameter, dayParameter);
         }
     
-        public virtual ObjectResult<string> sp_getseats(Nullable<int> flight_number, Nullable<System.DateTime> traveldate)
+        public virtual ObjectResult<string> sp_getseats(Nullable<int> flight_number)
         {
             var flight_numberParameter = flight_number.HasValue ?
                 new ObjectParameter("flight_number", flight_number) :
                 new ObjectParameter("flight_number", typeof(int));
     
-            var traveldateParameter = traveldate.HasValue ?
-                new ObjectParameter("traveldate", traveldate) :
-                new ObjectParameter("traveldate", typeof(System.DateTime));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getseats", flight_numberParameter, traveldateParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getseats", flight_numberParameter);
         }
     
-        public virtual ObjectResult<sp_searchflight_Result> sp_searchflight(string departure, string arrival, Nullable<System.DateTime> traveldate, Nullable<int> no_of_seats, string day)
+        public virtual ObjectResult<sp_searchflight_Result> sp_searchflight(string departure, string arrival, Nullable<int> no_of_seats)
         {
             var departureParameter = departure != null ?
                 new ObjectParameter("departure", departure) :
@@ -125,19 +122,12 @@ namespace new_airline_api.Models
                 new ObjectParameter("arrival", arrival) :
                 new ObjectParameter("arrival", typeof(string));
     
-            var traveldateParameter = traveldate.HasValue ?
-                new ObjectParameter("traveldate", traveldate) :
-                new ObjectParameter("traveldate", typeof(System.DateTime));
-    
             var no_of_seatsParameter = no_of_seats.HasValue ?
                 new ObjectParameter("no_of_seats", no_of_seats) :
                 new ObjectParameter("no_of_seats", typeof(int));
     
-            var dayParameter = day != null ?
-                new ObjectParameter("day", day) :
-                new ObjectParameter("day", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_searchflight_Result>("sp_searchflight", departureParameter, arrivalParameter, traveldateParameter, no_of_seatsParameter, dayParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_searchflight_Result>("sp_searchflight", departureParameter, arrivalParameter, no_of_seatsParameter);
         }
     
         public virtual ObjectResult<sp_booked_history_Result> sp_booked_history(Nullable<int> userid)

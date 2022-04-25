@@ -46,7 +46,11 @@ import { environment } from 'src/environments/environment';
       {
         let params = new HttpParams();
         params = params.append('flightnumber', flightnumber);
-        params = seatclass == true ? params.append('seatclass', 'business') : params.append('seatclass', 'economy');
+        if(seatclass == true){
+          params = params.append('seatclass', 'business');
+        }else{
+          params = params.append('seatclass', 'economy');
+        }
         try 
         {
           return await this.httpClient.get<number>(this.apiServer,{ params: params }).toPromise()

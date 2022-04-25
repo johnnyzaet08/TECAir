@@ -68,39 +68,7 @@
                     </div>
                 </div><br>
 
-                <div class="row">
-                    <label for="days" class="col-sm-3 control-label">Days </label>
-                    <div class="col-sm-9" id="days">
-                    
-                        <ul class="days" name="days" required>
-                            <li><input type="checkbox" name="Monday"  #days="ngModel"
-                                [(ngModel)]="addflight.Monday" /> Monday </li>
-                            <li><input type="checkbox" name="Tuesday" #days="ngModel"
-                                [(ngModel)]="addflight.Tuesday"  /> Tuesday </li>
-                            <li><input type="checkbox" name="Wednesday" #days="ngModel"
-                                [(ngModel)]="addflight.Wednesday" /> Wednesday </li>
-                            <li><input type="checkbox" name="Thursday" #days="ngModel"
-                                [(ngModel)]="addflight.Thursday" /> Thursday </li>
-                            <li><input type="checkbox" name="Friday" #days="ngModel"
-                                [(ngModel)]="addflight.Friday" /> Friday </li>
-                            <li><input type="checkbox" name="Saturday" #days="ngModel"
-                                [(ngModel)]="addflight.Saturday" /> Saturday </li>
-                            <li><input type="checkbox" name="Sunday" #days="ngModel"
-                                [(ngModel)]="addflight.Sunday" /> Sunday </li>
-                        </ul>
-                    
-                    
-                        <div
-                        *ngIf="!days?.valid && (days?.dirty || days?.touched)" class="errors">
-                        <div *ngIf="days.errors.required">
-                            <span class="msg">&#9888; Select atleast one weekday</span>
-                        </div>
-                        </div>
-                    </div>
                 
-                </div><br>
-
-
 
                 <div class="row">
                     <label for="departure_time" class="col-sm-3 control-label">Departure </label>

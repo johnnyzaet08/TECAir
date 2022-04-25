@@ -39,11 +39,7 @@ export class SeatuiComponent implements OnInit {
       this.router.navigate([`${'/login'}`]);
     }
 
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const currentDate = new Date().getDate();
-    const date =`${currentYear}-${currentMonth+1}-${currentDate}`
-    this.seatService.fetchseats(111,date)
+    //this.seatService.fetchseats(111)
     this.numberofseats = this.seatService.number_of_seats
     this.seatclass = this.seatService.seatclass
     this.setbooked()

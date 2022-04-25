@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders,HttpParams } from "@angular/common/http";
 import {SelectedFlightService} from '../services/selectedflight.service'
 import { environment } from 'src/environments/environment';
+import { Console } from 'console';
 
 @Injectable({
   providedIn: 'root'
@@ -50,6 +51,7 @@ export class TransactionService {
             "contact_no":this.contact_no,
             "carddetails":this.card_details            
         }
+        console.log(this.body);
         try 
         {
           let a = await this.httpClient.post(this.apiServer,this.body,this.httpOptions).toPromise()

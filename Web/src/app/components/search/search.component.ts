@@ -41,7 +41,7 @@ export class SearchComponent implements OnInit {
   pageName = 'flight/search'
 
   
-  model = new Searchflight("one-way","Delhi", '', new Date(), new Date() , 1);
+  model = new Searchflight("one-way","Delhi", '', 1);
   
   
   handlelogout() 
@@ -53,17 +53,14 @@ export class SearchComponent implements OnInit {
   async onSubmit()
   {
     Swal.fire('Fetching Your Flights');    Swal.showLoading();
-    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
     let depart_location = this.model.departurelocation
     let arrival_location = this.model.arrivallocation
-    let departure_date = `${this.model.departuredate.getFullYear()}-${this.model.departuredate.getUTCMonth()+1}-${this.model.departuredate.getDate()}`
-    let day = days[this.model.departuredate.getDay()]
     let direction = this.model.direction
     let seats = this.model.seats
 
     if(direction == 'one-way')
     {
-      let response = await this.GetFlightsService.post(depart_location,arrival_location,day,departure_date,seats)
+      let response = await this.GetFlightsService.post(depart_location,arrival_location,seats)
       if(response == null)
         {
           Swal.close();

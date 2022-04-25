@@ -12,7 +12,7 @@ namespace new_airline_api.Controllers
     {
         private new_airlineEntities entity = new new_airlineEntities();
         [HttpGet]
-        public IHttpActionResult getseats(int flightnumber, System.DateTime date)
+        public IHttpActionResult getseats(int flightnumber)
         {
             if (!ModelState.IsValid)
             {
@@ -20,7 +20,7 @@ namespace new_airline_api.Controllers
             }
             try
             {
-                return Ok(entity.sp_getseats(flightnumber, date));
+                return Ok(entity.sp_getseats(flightnumber));
             }
             catch(Exception ex)
             {

@@ -22,17 +22,14 @@ export class SearchflightService {
   constructor(private httpClient: HttpClient) { }
   public flightdata = [] ;
 
-    async post(departure:string,arrival:string,day:string,date,seats){
+    async post(departure:string,arrival:string,seats){
     let params = new HttpParams();
     this.departure_location = departure
     this.arrival_location = arrival
     this.seats = seats
-    this.date = date
 
     params = params.append('departure', departure);
     params = params.append('arrival', arrival);
-    params = params.append('day', day);
-    params = params.append('date', date);
     params = params.append('seats', seats);
      
     try 

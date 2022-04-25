@@ -46,11 +46,10 @@ export class FetchSeatService{
           
           
         }
-        async fetchseats(no,date)
+        async fetchseats(no)
           {
             let params = new HttpParams();
             params = params.append('flightnumber', no);
-            params = params.append('date', date);
             try 
             {
               let a =   await this.httpClient.get<[]>(this.apiServer,{ params: params }).toPromise()

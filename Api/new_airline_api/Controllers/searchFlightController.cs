@@ -19,7 +19,7 @@ namespace new_airline_api.Controllers
         }*/
         
         [HttpGet]
-        public IHttpActionResult searchflight(string departure, string arrival, string day, int seats)
+        public IHttpActionResult searchflight(string departure, string arrival, int seats)
         {
             if (!ModelState.IsValid)
             {
@@ -27,9 +27,13 @@ namespace new_airline_api.Controllers
             }
             try
             {
-                DateTime date = DateTime.Today;
+
+                var flights = entity.Flight_Master.Where(x => x.departure_location == departure && x.arrival_location == arrival);
+
+                return Ok(flights);
+
                 List<new_airline_api.Models.sp_searchflight_Result> list_of_flights = new List<new_airline_api.Models.sp_searchflight_Result>();
-                var searched_flights = entity.sp_searchflight(departure, arrival, date, seats, day);
+                var searched_flights = entity.sp_searchflight(departure, arrival, seats);
                 foreach (var flight in searched_flights)
                 {
                     if (flight.sum == null || Convert.ToInt32(flight.sum) < Convert.ToInt32(120 - seats))
